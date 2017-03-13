@@ -1,0 +1,224 @@
+@import "bourbon/bourbon"
+@import "vars"
+
+body
+  background: $bg
+  h1,h2,h3,h4,h5,h6,p
+    margin: 0
+  a
+    color: silver
+    &:hover
+      color: $shadow
+      text-decoration: none
+    color: $bg
+  font-family: 'Merriweather', serif
+  .navbar-default
+    background: transparent
+  .navbar
+    height: 80px
+    border: none
+    .navbar-brand
+      margin-top: 14px
+      font-size: 26px
+      color: $accent
+    .navbar-nav
+      .active
+        a
+          background: $accent
+      li
+        margin: 20px 0
+        a
+          font-size: 18px
+          padding: 10px 25px
+          background: transparent
+  .show
+    background: transparentize($text, 0.1)
+
+
+  header
+    text-align: center
+    height: 100vh
+    background:
+      image: url("../img/header-bg.jpg")
+      position: center bottom
+      size: cover
+      attachment: fixed
+    +position(relative)
+    z-index: 0
+    h2
+      color: transparentize($darkText, 0.1)
+      text-shadow: 0px 2px 1px $bg
+      padding: 40vh 0 15vh
+      +position(relative)
+    .call-to-action
+      color: $text
+      text-shadow: 0 0 5px $shadow
+      background: transparentize($bg, 0.5)
+      padding: 10px 30px
+      font:
+        family: 'Permanent Marker', cursive
+        size: 26px
+        weight: 600
+      letter-spacing: 5px
+      border-radius: 15px
+      +transition
+      +position(relative)
+      &:hover
+        color: transparentize($shadow, 0.7)
+        background: transparentize($bg, 0.1)
+    span
+      margin-top: 100px
+      color: $accent
+      font:
+        family: 'Permanent Marker', cursive
+        size: 20px
+        weight: 300
+      text-shadow: 0 0 8px $shadow
+      background: transparent
+    &::before
+      content: ""
+      height: 100vh
+      width: 100%
+      display: block
+      +position(absolute, 0 0 0 0)
+      z-index: -1
+      background: linear-gradient(transparentize($bg, 0.85), transparentize($bg, 0.0))
+  #about
+    +transition(800ms)
+    h3
+      letter-spacing: 5px
+      text-align: center
+      padding: 10vh
+      color: $accent
+      text-shadow: 0 0 8px grey
+    p
+      color: grey
+
+  #workshop
+    +transition(800ms)
+    letter-spacing: 5px
+    text-align: center
+    padding: 10vh
+    color: $text
+    text-shadow: 0 0 8px grey
+    font-family: 'Permanent Marker', cursive
+    .row
+      width: 80%
+      max-width: 800px
+      margin: 20vh auto 10vh
+      a
+        .col-sm-4
+          margin: 30px
+          height: 50vh
+          width: 200px
+          box-shadow: 0 0 100px $accent inset
+          border-radius: 30px
+          box-shadow: 2px 2px 30px silver
+          +position(relative)
+          +transition
+          h6
+            +position(absolute, 50% null null 50%)
+            +transform(translate(-50%,-50%))
+            font:
+              size: 14px
+              weight: 600
+          &:hover
+            box-shadow: 5px 10px 20px grey
+            +transform(scale(1.1))
+        &:hover
+          text-shadow: 2px 1px 1px $bg
+
+
+
+      .card1
+        background:
+          image: url("../img/craft.jpg")
+          position: center
+          size: cover
+      .card2
+        background:
+          image: url("../img/rc-remote.jpg")
+          position: center
+          size: cover
+      .card3
+        background:
+          image: url("../img/AI.jpg")
+          position: center
+          size: cover
+
+  #competition
+    +transition(800ms)
+    h3
+      text-align: center
+      padding: 10vh
+      color: $accent
+      text-shadow: 0 0 2px grey
+
+    .container
+      .event1
+        background-image: url("../img/event1.jpg")
+      .event2
+        background-image: url("../img/event2.jpg")
+      .event3
+        background-image: url("../img/event3.jpg")
+      .event4
+        background-image: url("../img/event4.jpg")
+      .col-md-3
+        text-align: center
+        padding: 15vh 0
+        +position(relative)
+        margin-bottom: 10vh
+        z-index: 0
+        overflow: hidden
+        background:
+          position: center
+          size: cover
+        font-family: 'Permanent Marker', cursive
+        letter-spacing: 5px
+        a
+          text-shadow: 1px 1px 1px $shadow
+        &:before
+          content: ""
+          height: 100%
+          width: 100%
+          display: block
+          +position(absolute, 0 0 0 0)
+          z-index: -1
+          background: linear-gradient(transparentize($bg, 0.2), transparentize($shadow, 1))
+        &:hover::before
+          background: transparent
+
+
+  footer
+    background: linear-gradient(transparentize($bg, 0.2),transparentize($text, 0.0))
+    .container-fluid
+      padding: 10vh
+      .footer-brand
+        font-size: 26px
+        color: $accent
+      .col-sm-4
+        .social-icons
+          a
+            +position(relative)
+            margin: 0 20px
+            float: left
+            +size(50px)
+            border-radius: 50%
+            background: white
+            box-shadow: 0px 0px 30px black inset
+            &:hover
+              box-shadow: 2px 5px 20px black
+            svg
+              border-radius: 42%
+          #twitter
+            fill: dodgerblue
+          #facebook
+            fill: darkslateblue
+    p
+      padding: 5px
+      text-align: center
+      border-top: 1px solid transparentize($shadow, 0.5)
+      span
+        color: red
+  .reveal
+    opacity: 1

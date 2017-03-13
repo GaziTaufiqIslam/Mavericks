@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Permanent+Marker");
+body {
+  background: #feffff;
+  font-family: "Merriweather", serif; }
+  body h1, body h2, body h3, body h4, body h5, body h6, body p {
+    margin: 0; }
+  body a {
+    color: silver;
+    color: #feffff; }
+    body a:hover {
+      color: #312c32;
+      text-decoration: none; }
+  body .navbar-default {
+    background: transparent; }
+  body .navbar {
+    height: 80px;
+    border: none; }
+    body .navbar .navbar-brand {
+      margin-top: 14px;
+      font-size: 26px;
+      color: #98dafc; }
+    body .navbar .navbar-nav .active a {
+      background: #98dafc; }
+    body .navbar .navbar-nav li {
+      margin: 20px 0; }
+      body .navbar .navbar-nav li a {
+        font-size: 18px;
+        padding: 10px 25px;
+        background: transparent; }
+  body .show {
+    background: rgba(218, 173, 134, 0.9); }
+  body header {
+    text-align: center;
+    height: 100vh;
+    background-image: url("../img/header-bg.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0; }
+    body header h2 {
+      color: rgba(158, 107, 63, 0.9);
+      text-shadow: 0px 2px 1px #feffff;
+      padding: 40vh 0 15vh;
+      position: relative; }
+    body header .call-to-action {
+      color: #daad86;
+      text-shadow: 0 0 5px #312c32;
+      background: rgba(254, 255, 255, 0.5);
+      padding: 10px 30px;
+      font-family: "Permanent Marker", cursive;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 5px;
+      border-radius: 15px;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s;
+      position: relative; }
+      body header .call-to-action:hover {
+        color: rgba(49, 44, 50, 0.3);
+        background: rgba(254, 255, 255, 0.9); }
+    body header span {
+      margin-top: 100px;
+      color: #98dafc;
+      font-family: "Permanent Marker", cursive;
+      font-size: 20px;
+      font-weight: 300;
+      text-shadow: 0 0 8px #312c32;
+      background: transparent; }
+    body header::before {
+      content: "";
+      height: 100vh;
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      background: linear-gradient(rgba(254, 255, 255, 0.15), #feffff); }
+  body #about {
+    -webkit-transition: 800ms;
+    -moz-transition: 800ms;
+    transition: 800ms; }
+    body #about h3 {
+      letter-spacing: 5px;
+      text-align: center;
+      padding: 10vh;
+      color: #98dafc;
+      text-shadow: 0 0 8px grey; }
+    body #about p {
+      color: grey; }
+  body #workshop {
+    -webkit-transition: 800ms;
+    -moz-transition: 800ms;
+    transition: 800ms;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 10vh;
+    color: #daad86;
+    text-shadow: 0 0 8px grey;
+    font-family: "Permanent Marker", cursive; }
+    body #workshop .row {
+      width: 80%;
+      max-width: 800px;
+      margin: 20vh auto 10vh; }
+      body #workshop .row a .col-sm-4 {
+        margin: 30px;
+        height: 50vh;
+        width: 200px;
+        box-shadow: 0 0 100px #98dafc inset;
+        border-radius: 30px;
+        box-shadow: 2px 2px 30px silver;
+        position: relative;
+        -webkit-transition: all 0.15s ease-out 0s;
+        -moz-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s; }
+        body #workshop .row a .col-sm-4 h6 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          font-size: 14px;
+          font-weight: 600; }
+        body #workshop .row a .col-sm-4:hover {
+          box-shadow: 5px 10px 20px grey;
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          transform: scale(1.1); }
+      body #workshop .row a:hover {
+        text-shadow: 2px 1px 1px #feffff; }
+      body #workshop .row .card1 {
+        background-image: url("../img/craft.jpg");
+        background-position: center;
+        background-size: cover; }
+      body #workshop .row .card2 {
+        background-image: url("../img/rc-remote.jpg");
+        background-position: center;
+        background-size: cover; }
+      body #workshop .row .card3 {
+        background-image: url("../img/AI.jpg");
+        background-position: center;
+        background-size: cover; }
+  body #competition {
+    -webkit-transition: 800ms;
+    -moz-transition: 800ms;
+    transition: 800ms; }
+    body #competition h3 {
+      text-align: center;
+      padding: 10vh;
+      color: #98dafc;
+      text-shadow: 0 0 2px grey; }
+    body #competition .container .event1 {
+      background-image: url("../img/event1.jpg"); }
+    body #competition .container .event2 {
+      background-image: url("../img/event2.jpg"); }
+    body #competition .container .event3 {
+      background-image: url("../img/event3.jpg"); }
+    body #competition .container .event4 {
+      background-image: url("../img/event4.jpg"); }
+    body #competition .container .col-md-3 {
+      text-align: center;
+      padding: 15vh 0;
+      position: relative;
+      margin-bottom: 10vh;
+      z-index: 0;
+      overflow: hidden;
+      background-position: center;
+      background-size: cover;
+      font-family: "Permanent Marker", cursive;
+      letter-spacing: 5px; }
+      body #competition .container .col-md-3 a {
+        text-shadow: 1px 1px 1px #312c32; }
+      body #competition .container .col-md-3:before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background: linear-gradient(rgba(254, 255, 255, 0.8), rgba(49, 44, 50, 0)); }
+      body #competition .container .col-md-3:hover::before {
+        background: transparent; }
+  body footer {
+    background: linear-gradient(rgba(254, 255, 255, 0.8), #daad86); }
+    body footer .container-fluid {
+      padding: 10vh; }
+      body footer .container-fluid .footer-brand {
+        font-size: 26px;
+        color: #98dafc; }
+      body footer .container-fluid .col-sm-4 .social-icons a {
+        position: relative;
+        margin: 0 20px;
+        float: left;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: white;
+        box-shadow: 0px 0px 30px black inset; }
+        body footer .container-fluid .col-sm-4 .social-icons a:hover {
+          box-shadow: 2px 5px 20px black; }
+        body footer .container-fluid .col-sm-4 .social-icons a svg {
+          border-radius: 42%; }
+      body footer .container-fluid .col-sm-4 .social-icons #twitter {
+        fill: dodgerblue; }
+      body footer .container-fluid .col-sm-4 .social-icons #facebook {
+        fill: darkslateblue; }
+    body footer p {
+      padding: 5px;
+      text-align: center;
+      border-top: 1px solid rgba(49, 44, 50, 0.5); }
+      body footer p span {
+        color: red; }
+  body .reveal {
+    opacity: 1; }
+
+/*# sourceMappingURL=main.css.map */
